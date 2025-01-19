@@ -1,21 +1,49 @@
-header {
-    text-align: end;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-end;
+    line-height: 50px;
+    padding-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1f1f1f;
+    font-size: 13px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    height: -webkit-fill-available;
 }
 
 .search-container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+    margin-top: 100px;
 }
 
 .search-container-input {
     position: relative;
     display: flex;
+    align-items: center;
     padding: 10px 15px;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
     box-shadow: 0px 2px 8px 0px rgba(60, 64, 67, 0.25);
     transition: box-shadow 0.3s;
@@ -33,11 +61,37 @@ header {
     outline: none;
     background-color: transparent;
     font-size: 16px;
+    line-height: 22px;
 }
 
 .search-container-input i {
     font-size: 18px;
-    cursor: pointer;
     margin-right: 10px;
     color: #666;
+}
+
+.default-button {
+    font-family: Arial, sans-serif !important;
+    color: #3c4043 !important;
+    border: none;
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.default-button:hover {
+    border: 1px solid #d2d2d3;
+    cursor: pointer;
+}
+
+.logo-with-label {
+    position: relative;
+}
+
+.logo-label{
+    color: #4285f4;
+    position: absolute;
+    bottom: 0;
+    left: 215px;
 }
