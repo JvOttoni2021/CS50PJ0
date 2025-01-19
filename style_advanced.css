@@ -1,0 +1,102 @@
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+img {
+    height: auto;
+    width: 70px;
+    align-self: anchor-center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-end;
+    line-height: 50px;
+    padding-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1f1f1f;
+    font-size: 13px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.page-title {
+    padding: 20px 40px;
+    color: #d93025;
+    font-size: 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: min-content 70%;
+    padding: 40px;
+    gap: 20px;
+}
+
+.grid-title {
+    grid-column: span 2;
+}
+
+.grid-label {
+    text-wrap-mode: nowrap;
+    font-size: 13px;
+    align-content: center;
+}
+
+.grid input[type=text] {
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 25px;
+    padding: 1px 8px;
+    width: -webkit-fill-available;
+}
+
+.grid input[type=text]:focus {
+    box-shadow: inset 1px 10px 3px -8px rgba(189,189,189,1);
+    border-color: aqua;
+}
+
+.as-button {
+    box-shadow: none;
+    background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+    border: 1px solid #3079ed;
+    color: #fff;
+    -webkit-user-select: none;
+    user-select: none;
+    line-height: 100%;
+    height: 30px;
+    min-width: 120px;
+    border-radius: 2px;
+    width: fit-content;
+    float: right;
+}
+
+.as-button:hover {
+    background-color: #357ae8;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+    border: 1px solid #2f5bb7;
+    border-image: initial;
+}

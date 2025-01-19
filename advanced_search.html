@@ -9,24 +9,49 @@
     </head>
     <body>
         <header>
+            <img src="google_logo.png" alt="Google logo">
             <nav>
                 <a href="index.html">Search</a>
-                <a href="advanced_search.html">Advanced search</a>
             </nav>
         </header>
         <main>
+            <div class="page-title">
+                <span>Advanced search</span>
+            </div>
             <form action="https://www.google.com/search">
-                <div class="search-container">
-                    <div class="logo-with-label">
-                        <img src="google_logo.png" alt="Google logo">
-                        <span class="logo-label">Images</span>
+                <div class="grid">
+                    <div class="grid-title">
+                        Find pages with...
                     </div>
-                    <div class="search-container-input">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" name="q">
+                    <div class="grid-label">
+                        all these words:
                     </div>
-                    <input type="text" name="udm" value="2" hidden>
-                    <input class="default-button" type="submit" value="Google Search">
+                    <div>
+                        <input type="text" name="as_q">
+                    </div>
+                    <div class="grid-label">
+                        this exact word or phrase:
+                    </div>
+                    <div>
+                        <input type="text" name="as_epq">
+                    </div>
+                    <div class="grid-label">
+                        any of these words:
+                    </div>
+                    <div>
+                        <input type="text" name="as_oq">
+                    </div>
+                    <div class="grid-label">
+                        none of these words:
+                    </div>
+                    <div>
+                        <input type="text" name="as_eq">
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                        <input class="as-button" type="submit" value="Advanced search">
+                    </div>
                 </div>
             </form>
         </main>
